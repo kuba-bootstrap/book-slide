@@ -1,0 +1,6 @@
+.box { -moz-transition: all .3s ease-out; -webkit-transition: all .3s ease-out; -o-transition: all .3s ease-out; }
+.box { position:absolute; top:50px; left:0; background:#333; color:#fff; -webkit-transform:translate3d(1024px, 0px, 0px); opacity:0; }
+
+.box img { display:block; }
+
+a { padding:10px; cursor:pointer; }
