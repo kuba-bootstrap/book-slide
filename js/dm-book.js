@@ -58,13 +58,13 @@
             if(this._pages != null){
                 $(this._pages[0]).css({
                     '-webkit-transform': 'translate3d(0px, 0px, 0px)',
-                    'z-index': '1'
+                    'z-index': '1',
+                    'opacity': 1
                 });
             }
         },
         moveBook: function(direction){
             if(direction == 'left'){
-                console.log('left');
                 if(this._pointer > 0){
                     this._pointer--;
                     
@@ -81,10 +81,8 @@
                         'z-index': 1,
                         'opacity': 1
                     });
-                    console.log(objectP, objectM, this._pointer);
                 }
             } else if(direction == 'right' && this._pages.length > 1){
-                console.log('right');
                 if(this._pointer < (this._pages.length - 1)){
                     this._pointer++;
                     
@@ -101,7 +99,6 @@
                         'z-index': 1,
                         'opacity': 1
                     });
-                    console.log(objectP, objectM, this._pointer);
                 }
             }
         }
